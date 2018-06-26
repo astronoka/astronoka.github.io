@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Astronoka Archive</title>
-    <link>http://astronoka.github.io/posts/</link>
+    <link>https://astronoka.github.io/posts/</link>
     <description>Recent content in Posts on Astronoka Archive</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Wed, 27 Jun 2018 02:19:42 +0900</lastBuildDate>
     
-	<atom:link href="http://astronoka.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://astronoka.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello World</title>
-      <link>http://astronoka.github.io/posts/world/</link>
+      <link>https://astronoka.github.io/posts/world/</link>
       <pubDate>Wed, 27 Jun 2018 02:19:42 +0900</pubDate>
       
-      <guid>http://astronoka.github.io/posts/world/</guid>
+      <guid>https://astronoka.github.io/posts/world/</guid>
       <description></description>
     </item>
     
