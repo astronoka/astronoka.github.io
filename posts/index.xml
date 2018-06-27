@@ -19,10 +19,8 @@
       <guid>https://astronoka.github.io/posts/create-favicon/</guid>
       <description>imagemagic でできそうだと思ったらできました。
 http://www.imagemagick.org/discourse-server/viewtopic.php?t=24796
-変換結果 元画像 fsm300.png
-$ identify fsm300.png fsm300.png PNG 300x300 300x300+0+0 8-bit sRGB 9254B 0.000u 0:00.000 加工後 favicon.ico
-$ identify favicon.ico favicon.ico[0] ICO 128x128 128x128+0+0 8-bit sRGB 88878B 0.000u 0:00.000 favicon.ico[1] ICO 64x64 64x64+0+0 8-bit sRGB 88878B 0.000u 0:00.000 favicon.ico[2] ICO 32x32 32x32+0+0 8-bit sRGB 88878B 0.000u 0:00.000 手順 元画像をicon:auto-resizeで変換。
-$ convert fsm300.png -define icon:auto-resize favicon.ico $ identify favicon.ico favicon.ico[0] PNG 256x256 256x256+0+0 8-bit Grayscale Gray 305731B 0.</description>
+手順 元画像をicon:auto-resizeで変換。
+$ convert fsm300.png -define icon:auto-resize favicon.ico $ identify favicon.ico favicon.ico[0] PNG 256x256 256x256+0+0 8-bit Grayscale Gray 305731B 0.000u 0:00.000 favicon.ico[1] ICO 192x192 192x192+0+0 8-bit sRGB 305731B 0.000u 0:00.000 favicon.ico[2] ICO 128x128 128x128+0+0 8-bit sRGB 305731B 0.000u 0:00.000 favicon.ico[3] ICO 96x96 96x96+0+0 8-bit sRGB 305731B 0.000u 0:00.000 favicon.ico[4] ICO 64x64 64x64+0+0 8-bit sRGB 305731B 0.000u 0:00.000 favicon.ico[5] ICO 48x48 48x48+0+0 8-bit sRGB 305731B 0.000u 0:00.000 favicon.</description>
     </item>
     
     <item>

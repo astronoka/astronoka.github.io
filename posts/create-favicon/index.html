@@ -73,20 +73,6 @@
 
 <p><a href="http://www.imagemagick.org/discourse-server/viewtopic.php?t=24796">http://www.imagemagick.org/discourse-server/viewtopic.php?t=24796</a></p>
 
-<h2 id="変換結果">変換結果</h2>
-
-<p><strong>元画像</strong> fsm300.png</p>
-
-<p><img src="https://astronoka.github.io/images/fsm300.png" alt="fsm image" /></p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">$ identify fsm300.png
-fsm300.png PNG 300x300 300x300+0+0 8-bit sRGB 9254B 0.000u 0:00.000</pre></div>
-<p><strong>加工後</strong> favicon.ico</p>
-
-<p><img src="https://astronoka.github.io/favicon.ico" alt="fsm image" /></p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">$ identify favicon.ico
-favicon.ico[0] ICO 128x128 128x128+0+0 8-bit sRGB 88878B 0.000u 0:00.000
-favicon.ico[1] ICO 64x64 64x64+0+0 8-bit sRGB 88878B 0.000u 0:00.000
-favicon.ico[2] ICO 32x32 32x32+0+0 8-bit sRGB 88878B 0.000u 0:00.000</pre></div>
 <h2 id="手順">手順</h2>
 
 <p>元画像をicon:auto-resizeで変換。</p>
@@ -107,11 +93,28 @@ favicon.ico[9] ICO 16x16 16x16+0+0 8-bit sRGB 305731B 0.000u 0:00.000</pre></div
 $ identify favicon.ico
 favicon.ico[0] ICO 128x128 128x128+0+0 8-bit sRGB 88878B 0.000u 0:00.009
 favicon.ico[1] ICO 64x64 64x64+0+0 8-bit sRGB 88878B 0.000u 0:00.009
-favicon.ico[2] ICO 32x32 32x32+0+0 8-bit sRGB 88878B 0.000u 0:00.009</pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">$ ls -lh favicon* | awk &#39;{print $9, $5}&#39;
+favicon.ico[2] ICO 32x32 32x32+0+0 8-bit sRGB 88878B 0.000u 0:00.009</pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">$ ls -lh *.{ico,png} | awk &#39;{print $9, $5}&#39;
 favicon.ico 299K
-favicon_size_specified.ico 87K</pre></div>
-<p>サイズを指定したほうを採用！</p>
+favicon_size_specified.ico 87K
+fsm300.png 9.0K</pre></div>
+<p>もとのpngが一番小さかった😂</p>
 
+<p>そのまま使おう。</p>
+
+<h2 id="いちおう変換結果">いちおう変換結果</h2>
+
+<p><strong>元画像</strong> fsm300.png</p>
+
+<p><img src="https://astronoka.github.io/images/fsm300.png" alt="fsm image" /></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">$ identify fsm300.png
+fsm300.png PNG 300x300 300x300+0+0 8-bit sRGB 9254B 0.000u 0:00.000</pre></div>
+<p><strong>加工後</strong> favicon.ico</p>
+
+<p><img src="https://astronoka.github.io/favicon.ico" alt="fsm image" /></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">$ identify favicon.ico
+favicon.ico[0] ICO 128x128 128x128+0+0 8-bit sRGB 88878B 0.000u 0:00.000
+favicon.ico[1] ICO 64x64 64x64+0+0 8-bit sRGB 88878B 0.000u 0:00.000
+favicon.ico[2] ICO 32x32 32x32+0+0 8-bit sRGB 88878B 0.000u 0:00.000</pre></div>
   </article>
 
   <br/>
